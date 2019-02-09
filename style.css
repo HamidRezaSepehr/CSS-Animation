@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+[class^="effect"] {
+	background-color: #eee;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	font-size: 3em;
+	font-weight: 700;
+	text-decoration: none;
+	margin: 20px;
+	position: relative;
+	color: #555;
+	padding: 10px;
+}
+
+.effect1 a:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 100%;
+	background-color: orange;
+	transition: all 300ms ease;
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.effect1 a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 4px;
+	width: 100%;
+	background-color: orange;
+	transition: all 300ms ease;
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+.effect1 a:hover:before, .effect1 a:hover:after {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+
+
+
+
+.effect2 a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 0;
+	background-color: orange;
+	transition: all 300ms ease;
+}
+
+.effect2 a:hover:before {
+	width: 100%;
+}
+
+
+
+.effect3 a:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 4px;
+	width: 0;
+	background-color: orange;
+	transition: all 300ms ease;
+	direction: rtl;
+}
+
+.effect3 a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 0;
+	background-color: orange;
+	transition: all 300ms ease;
+}
+
+.effect3 a:hover:before, .effect3 a:hover:after {
+	width: 100%;
+}
+
+
+.effect4 a:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 4px;
+	width: 0;
+	background-color: orange;
+	transition: all 300ms ease;
+	direction: rtl;
+}
+
+.effect4 a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 0;
+	background-color: orange;
+	transition: all 300ms ease;
+}
+
+.effect4 a:hover:before, .effect4 a:hover:after {
+	width: 50%;
+}
